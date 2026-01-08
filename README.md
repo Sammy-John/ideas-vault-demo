@@ -1,5 +1,6 @@
 # idea-vault-demo
 
+(View Demo)[https://sammy-john.github.io/ideas-vault-demo/]
 A simple personal Idea Vault: Notes → Seeds → Future.
 
 This repo will include:

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Idea Vault Demo — Notes → Seeds → Future</title>
+  <meta name="description" content="A simple Idea Vault for capturing notes, promoting seeds, and moving ideas into future work." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">🌱</div>
+        <div>
+          <div class="title">Idea Vault Demo</div>
+          <div class="subtitle">Notes → Seeds → Future</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a href="#screenshots">Screenshots</a>
+        <a href="#features">Features</a>
+        <a href="#deploy">Deploy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <h1>A lightweight capture tool for ideas.</h1>
+          <p>
+            Capture anything fast as a <strong>Note</strong>, promote it into a <strong>Seed</strong>,
+            then move it into your future systems (blog, learning, projects, products).
+          </p>
+
+          <div class="cta-row">
+            <a class="btn primary" href="#deploy">Deploy your own</a>
+            <a class="btn" href="#screenshots">See screenshots</a>
+          </div>
+
+          <p class="tiny">
+            Built with Vanilla HTML/CSS/JS + Vercel Functions + Supabase.
+          </p>
+        </div>
+
+        <div class="hero-card">
+          <div class="card-title">System model</div>
+          <ul class="card-list">
+            <li><strong>Notes</strong> — capture links, bookmarks, quick context</li>
+            <li><strong>Seeds</strong> — tag + add a seed note for future use</li>
+            <li><strong>Future</strong> — promote into other compartments later</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="screenshots">
+      <div class="container">
+        <h2>Screenshots</h2>
+        <p class="muted">Drop images into <code>docs/assets/screenshots/</code> and update filenames below.</p>
+
+        <div class="grid">
+          <figure class="shot">
+            <img src="assets/screenshots/ideas-vault.JPG" alt="Desktop Notes view screenshot" />
+            <figcaption>Desktop — Notes view</figcaption>
+          </figure>
+
+          <figure class="shot">
+            <img src="assets/screenshots/ideas-seeds.JPG" alt="Desktop Seeds view screenshot" />
+            <figcaption>Desktop — Seeds view</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Features</h2>
+
+        <div class="feature-grid">
+          <div class="feature">
+            <h3>Capture-first</h3>
+            <p>Fast input for links + context. No over-structuring up front.</p>
+          </div>
+
+          <div class="feature">
+            <h3>Notes & Seeds</h3>
+            <p>Separate views, with seed-only metadata like tags and seed notes.</p>
+          </div>
+
+          <div class="feature">
+            <h3>Mobile-friendly</h3>
+            <p>Comfortable capture on phone, full management on desktop.</p>
+          </div>
+
+          <div class="feature">
+            <h3>Private by default</h3>
+            <p>Server-side access to Supabase with a simple vault key gate.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="deploy">
+      <div class="container">
+        <h2>Deploy your own</h2>
+        <p class="muted">
+          This repo is intended to be cloned and deployed. Setup instructions will live in <code>DEPLOY.md</code>.
+        </p>
+
+        <ol class="steps">
+          <li>Create a Supabase project + table.</li>
+          <li>Deploy to Vercel.</li>
+          <li>Add environment variables (<code>SUPABASE_URL</code>, <code>SUPABASE_SERVICE_ROLE_KEY</code>, <code>VAULT_KEY</code>).</li>
+          <li>Open the app, set your key, and start capturing.</li>
+        </ol>
+
+        <div class="cta-row">
+          <a class="btn primary" href="../README.md">Read the README</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="muted">© Idea Vault Demo</div>
+    </div>
+  </footer>
+</body>
+</html>

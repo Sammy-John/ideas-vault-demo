@@ -1,2 +1,7 @@
-# ideas-vault-demo
-Demo for Ideas-Vault. Simple app to store links. 
+# idea-vault-demo
+
+A simple personal Idea Vault: Notes → Seeds → Future.
+
+This repo will include:
+- `/app` — the deployable app (Vercel)
+- `/docs` — a GitHub Pages landing page with screenshots
